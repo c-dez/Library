@@ -8,23 +8,32 @@
     <title>Library</title>
 </head>
 <body>
-    <h1>My Library</h1>
-    <section class="container-input">
-        <input type="text" class="input-title" placeholder="add title">
-        <input type="text" class="input-author" placeholder="author">
-        <input type="text" class="input-pages" placeholder="pages">
-        <label for="read" name="read">yes</label>
-        <input type="radio" name="read" class="input-read" >
-        <label for="read">no</label>
-        <input type="radio" name="read">
+    <h1>LIBRARY</h1>
+    <p>Please fill out this form</p>
+    <div class="container">
+        <form action="">
+           <label for="title">Title
+                <input type="text" name="title" id="title" placeholder="title">
+           </label>
 
-        
-        <button class="btn-add-book">Add Book</button>
-        <button class="a">alert</button>
-    </section>
-    <section class="container-library">
-        <h3>My books</h3>
-        <ul></ul>
-    </section>
+            <label for="author">Author
+                <input type="text" name="author" id="author" placeholder="author">
+            </label>
+
+            <label for="volume">Volume
+                <input type="number" name="volume" id="volume" placeholder="volume">
+            </label>
+
+            <label for="read">Already read?
+                <input type="checkbox" name="read" id="read" placeholder="read"
+                min="1">
+           </label>
+
+           <button type="button">Submit</button>
+
+            
+
+        </form>
+    </div>
 </body>
 </html>

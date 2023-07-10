@@ -1,3 +1,47 @@
 body{
-    background-color: wheat;
+    background-color: #1b1b32;
+    color: white;
+    height: 100vh;
+    margin: 0.5rem 0;
+    width: 100%;
+
+}
+
+label{
+    display: block;
+    padding: 0.5em;
+}
+input{
+    width: 100%;
+    min-height: 1.5em;
+}
+h1, p{
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+
+}
+form{
+    width: 60vh;
+    min-width: 300px;
+    max-width: 500px;
+    /* border: 1px solid pink; */
+    margin: 0 auto;
+    /* padding: 2rem; */
+}
+input[name="read"]{
+    width: unset;
+    min-width: unset;
+}
+button{
+    display: block;
+    min-height: 2em;
+    margin: auto;
+    width: 60%;
+    margin-top: 1em;
+    background-color: #3b3b4f;
+    border: 0;
+    color: aliceblue;
+    font-size: 1em;
+
 }
