@@ -14,5 +14,12 @@ const read = document.querySelector('#read')
 
 const submit = document.querySelector('#submit')
 
+//constructor
+function Book(title, author, volume, read){
+    this.title = title;
+    this.author = author;
+    this.volume = volume;
+    this.read = read;
 
+}
    
