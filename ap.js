@@ -21,8 +21,8 @@ function Book(title, author, volume, read){
     this.volume = volume.value;
     this.read = read.value;
 }
-
 let book = new Book(title, author, volume, read)
+ 
 const ul = document.querySelector('ul')
 //function creates a <li> in <ul> w text content of last item.title in array library
 function addToLibrary(){
@@ -30,4 +30,10 @@ function addToLibrary(){
    li.textContent= library[(library.length -1)].title
 }
 addToLibrary()
+
+function createBook(){
+    library.push(book)
+    addToLibrary()
+
+}
    
