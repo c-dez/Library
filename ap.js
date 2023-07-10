@@ -16,10 +16,23 @@ const submit = document.querySelector('#submit')
 
 //constructor
 function Book(title, author, volume, read){
-    this.title = title;
-    this.author = author;
-    this.volume = volume;
-    this.read = read;
-
+    this.title = title.value;
+    this.author = author.value;
+    this.volume = volume.value;
+    this.read = read.value;
 }
+
+let book = new Book(title, author, volume, read)
+
+//function loops array and displays the info in the page
+function addToLibrary(){
+    const ul = document.querySelector('#containerList>ul')
+    library.forEach((item)=>{
+    let li = document.createElement('li');
+    ul.appendChild(li);
+    li.textContent = item.title;
+
+    })
+}
+addToLibrary()
    
