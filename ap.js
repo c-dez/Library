@@ -23,16 +23,11 @@ function Book(title, author, volume, read){
 }
 
 let book = new Book(title, author, volume, read)
-
-//function loops array and displays the info in the page
+const ul = document.querySelector('ul')
+//function creates a <li> in <ul> w text content of last item.title in array library
 function addToLibrary(){
-    const ul = document.querySelector('#containerList>ul')
-    library.forEach((item)=>{
-    let li = document.createElement('li');
-    ul.appendChild(li);
-    li.textContent = item.title;
-
-    })
+   let li = document.createElement('li');ul.appendChild(li)
+   li.textContent= library[(library.length -1)].title
 }
 addToLibrary()
    
